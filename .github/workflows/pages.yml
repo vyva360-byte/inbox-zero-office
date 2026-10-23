@@ -1,0 +1,81 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build the client
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.3.14
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Build
+        env:
+          VITE_CONVEX_URL: ${{ vars.VITE_CONVEX_URL }}
+          PAGES_BASE_PATH: ${{ vars.PAGES_BASE_PATH }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${VITE_CONVEX_URL:-}" ]; then
+            echo "::error::Add VITE_CONVEX_URL as an Actions repository variable (Settings → Secrets and variables → Actions → Variables)."
+            exit 1
+          fi
+
+          REPO_NAME="${GITHUB_REPOSITORY#*/}"
+          if [ -n "${PAGES_BASE_PATH:-}" ]; then
+            BASE_PATH="$PAGES_BASE_PATH"
+          elif [ "$REPO_NAME" = "${GITHUB_REPOSITORY_OWNER}.github.io" ]; then
+            BASE_PATH="/"
+          else
+            BASE_PATH="/${REPO_NAME}/"
+          fi
+
+          echo "Building with base path: $BASE_PATH"
+          bun run typecheck
+          bunx vite build --base "$BASE_PATH"
+
+          # Deep links on GitHub Pages fall back to 404.html, which boots the
+          # same SPA and lets React Router render /room/CODE.
+          cp dist/index.html dist/404.html
+          touch dist/.nojekyll
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

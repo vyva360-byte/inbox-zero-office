@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 820" width="1600" height="820" role="img" aria-labelledby="banner-title banner-desc">
+  <title id="banner-title">INBOX ZERO — The Five-Minute Office</title>
+  <desc id="banner-desc">A cream retro-office banner with the INBOX ZERO title, a work ticket with a draining timer, a green CLEARED stamp and a company health meter.</desc>
+
+  <defs>
+    <pattern id="dots-a" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#211e1a" opacity="0.07" />
+    </pattern>
+    <pattern id="dots-b" width="27" height="27" patternUnits="userSpaceOnUse">
+      <circle cx="14" cy="9" r="1" fill="#ffffff" opacity="0.5" />
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="820" fill="#f2e8d5" />
+  <rect width="1600" height="820" fill="url(#dots-a)" />
+  <rect width="1600" height="820" fill="url(#dots-b)" />
+
+  <text x="96" y="86" font-family="'Courier New', Courier, monospace" font-size="16" letter-spacing="3" fill="#6b6153">INBOX ZERO / INTERNAL MEMO 001</text>
+  <text x="1504" y="86" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="16" letter-spacing="3" fill="#6b6153">CO-OP PARTY GAME · 2–6 PLAYERS</text>
+  <line x1="96" y1="112" x2="1504" y2="112" stroke="#211e1a" stroke-opacity="0.15" stroke-width="2" />
+
+  <text x="100" y="235" font-family="'Courier New', Courier, monospace" font-size="20" letter-spacing="6" fill="#6b6153">THE FIVE-MINUTE OFFICE</text>
+
+  <text x="92" y="440" font-family="Georgia, 'Times New Roman', serif" font-size="200" font-weight="bold" letter-spacing="-6" fill="#211e1a">INBOX</text>
+  <text x="92" y="624" font-family="Georgia, 'Times New Roman', serif" font-size="200" font-weight="bold" letter-spacing="-6" fill="#211e1a">ZERO</text>
+
+  <text x="96" y="700" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#211e1a" fill-opacity="0.86">Your team is the whole staff. Five minutes.</text>
+  <text x="96" y="740" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#211e1a" fill-opacity="0.86">One inbox. Don't let it burn.</text>
+
+  <g>
+    <rect x="96" y="772" width="152" height="44" rx="22" fill="#2f5fa8" fill-opacity="0.10" stroke="#2f5fa8" stroke-width="2" />
+    <text x="172" y="800" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="bold" letter-spacing="2" fill="#2f5fa8">SUPPORT</text>
+
+    <rect x="258" y="772" width="152" height="44" rx="22" fill="#2c7a52" fill-opacity="0.10" stroke="#2c7a52" stroke-width="2" />
+    <text x="334" y="800" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="bold" letter-spacing="2" fill="#2c7a52">BILLING</text>
+
+    <rect x="420" y="772" width="152" height="44" rx="22" fill="#c2611d" fill-opacity="0.10" stroke="#c2611d" stroke-width="2" />
+    <text x="496" y="800" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="bold" letter-spacing="2" fill="#c2611d">OPS</text>
+  </g>
+
+  <text x="608" y="800" font-family="'Courier New', Courier, monospace" font-size="13" letter-spacing="2" fill="#6b6153">3 STAMPS · 1 INBOX · 0 MERCY</text>
+
+  <g transform="rotate(4 1240 380)">
+    <rect x="995" y="165" width="500" height="390" rx="24" fill="#e6dac2" stroke="#211e1a" stroke-opacity="0.2" stroke-width="3" />
+  </g>
+
+  <g transform="rotate(-3 1230 380)">
+    <rect x="975" y="180" width="500" height="400" rx="24" fill="#fbf6ea" stroke="#211e1a" stroke-width="4" />
+
+    <text x="1005" y="230" font-family="'Courier New', Courier, monospace" font-size="15" letter-spacing="2" fill="#6b6153">TICKET #0042 · OPS</text>
+    <text x="1445" y="232" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="28" font-weight="bold" fill="#211e1a">$140</text>
+    <line x1="1005" y1="252" x2="1445" y2="252" stroke="#211e1a" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="7 7" />
+
+    <rect x="1005" y="275" width="92" height="92" rx="12" fill="#c2611d" fill-opacity="0.10" stroke="#c2611d" stroke-width="2" />
+    <text x="1051" y="330" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="bold" letter-spacing="1" fill="#c2611d">OPS</text>
+
+    <text x="1120" y="310" font-family="Helvetica, Arial, sans-serif" font-size="29" font-weight="bold" fill="#211e1a">The printer</text>
+    <text x="1120" y="346" font-family="Helvetica, Arial, sans-serif" font-size="29" font-weight="bold" fill="#211e1a">achieved sentience</text>
+    <text x="1120" y="382" font-family="Helvetica, Arial, sans-serif" font-size="29" font-weight="bold" fill="#211e1a">again</text>
+
+    <rect x="1005" y="430" width="440" height="12" rx="6" fill="#211e1a" fill-opacity="0.10" />
+    <rect x="1005" y="430" width="176" height="12" rx="6" fill="#c2611d" />
+
+    <text x="1005" y="470" font-family="'Courier New', Courier, monospace" font-size="14" letter-spacing="1" fill="#6b6153">22s LEFT</text>
+    <text x="1445" y="470" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="14" letter-spacing="1" fill="#6b6153">TAP TO CLEAR</text>
+  </g>
+
+  <g transform="rotate(-9 1310 585)">
+    <rect x="1135" y="540" width="350" height="96" rx="8" fill="#fbf6ea" stroke="#2c7a52" stroke-width="6" />
+    <rect x="1152" y="556" width="316" height="64" rx="4" fill="none" stroke="#2c7a52" stroke-width="2" />
+    <text x="1258" y="602" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="42" font-weight="bold" letter-spacing="3" fill="#2c7a52">CLEARED</text>
+    <path d="M1372 596 l 16 16 l 32 -38" fill="none" stroke="#2c7a52" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <text x="975" y="682" font-family="'Courier New', Courier, monospace" font-size="14" letter-spacing="2" fill="#6b6153">COMPANY HEALTH</text>
+  <text x="1475" y="683" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="17" font-weight="bold" fill="#211e1a">70/100</text>
+  <rect x="975" y="698" width="500" height="16" rx="8" fill="#211e1a" fill-opacity="0.10" stroke="#211e1a" stroke-opacity="0.25" stroke-width="2" />
+  <rect x="977" y="700" width="348" height="12" rx="6" fill="#2c7a52" />
+
+  <text x="1475" y="800" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" letter-spacing="2" fill="#6b6153">NO ACCOUNTS · ONE ROOM CODE</text>
+</svg>
